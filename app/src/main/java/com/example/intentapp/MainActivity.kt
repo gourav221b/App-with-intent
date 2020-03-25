@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private  fun explicitIntent(name: String,name2:String){
-        val intent = Intent(this,WelcomeScreen::class.java)
+        val intent = Intent(this,Main2Activity::class.java)
 
         intent.putExtra("NAME",name)
         intent.putExtra("NAME2",name2)
