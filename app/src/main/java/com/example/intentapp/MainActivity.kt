@@ -13,10 +13,10 @@ class MainActivity : AppCompatActivity() {
 
         val press:Button = findViewById(R.id.button)
         val name: EditText = findViewById(R.id.editText)
-        val name2:EditText=findViewById(R.id.editText)
+        val name2:EditText=findViewById(R.id.editText2)
 
         press.setOnClickListener {
-            explicitIntent(name.text.toString(),name2.text.toString())
+            explicitIntent(name.text.toString(), name2.text.toString())
 
         }
     }
@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(this,Main2Activity::class.java)
 
         intent.putExtra("NAME",name)
-        intent.putExtra("NAME2",name2)
+        intent.putExtra("Text22",name2)
 
         startActivity(intent)
     }
